@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/footer_bg">
+
+    <Button
+        android:id="@+id/go_radar"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="10dp"
+        android:textAllCaps="false"
+        android:textColor="#848484"
+        android:textSize="22sp"
+        android:text="@string/button_radar"
+        android:background="@drawable/button_bg" />
+
+    <Button
+        android:id="@+id/go_list"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="10dp"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:background="@drawable/button_bg" />
+
+</FrameLayout>

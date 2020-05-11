@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg">
+
+    <cn.haseo.radar.widget.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="#434343"
+        android:textSize="42sp"
+        android:text="@string/app_name"
+        android:background="@drawable/main_header_bg"
+        app:fontName="7thi" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:contentDescription="@null"
+            android:background="@drawable/flute_top" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:contentDescription="@null"
+            android:background="@drawable/flute_bottom" />
+
+        <ImageButton
+            android:id="@+id/locate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_margin="5dp"
+            android:src="@drawable/button_locate"
+            android:contentDescription="@null"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_margin="5dp"
+            android:src="@drawable/button_refresh"
+            android:contentDescription="@null"
+            android:background="@null" />
+
+        <cn.haseo.radar.widget.CircleLayout
+            android:layout_width="344dp"
+            android:layout_height="344dp"
+            android:layout_gravity="center"
+            app:corner_radius="172dp">
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/map_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </cn.haseo.radar.widget.CircleLayout>
+
+        <ImageView
+            android:id="@+id/scan_line"
+            android:layout_width="129dp"
+            android:layout_height="118dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="59dp"
+            android:contentDescription="@null"
+            android:src="@drawable/scan_line" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:src="@drawable/panel" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/footer_bg">
+
+        <Button
+            android:id="@+id/go_enemy_list"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/red"
+            android:textSize="22sp"
+            android:text="@string/text_enemy"
+            android:background="@drawable/button_bg" />
+
+        <Button
+            android:id="@+id/go_friend_list"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            android:textSize="22sp"
+            android:text="@string/text_friend"
+            android:background="@drawable/button_bg" />
+
+    </FrameLayout>
+
+</LinearLayout>

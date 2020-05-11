@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header" />
+
+    <include layout="@layout/person_item" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:overScrollMode="always"
+        android:background="@drawable/enemy_detail_bg">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <cn.haseo.radar.widget.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:text="@string/detail_number"
+                app:fontName="04b24" />
+
+            <cn.haseo.radar.widget.MyTextView
+                android:id="@+id/person_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                app:fontName="04b03b" />
+
+            <cn.haseo.radar.widget.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:text="@string/detail_latlng"
+                app:fontName="04b24" />
+
+            <cn.haseo.radar.widget.MyTextView
+                android:id="@+id/person_latlng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                app:fontName="04b03b" />
+
+            <cn.haseo.radar.widget.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:text="@string/detail_altitude"
+                app:fontName="04b24" />
+
+            <cn.haseo.radar.widget.MyTextView
+                android:id="@+id/person_altitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                app:fontName="04b03b" />
+
+            <cn.haseo.radar.widget.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:text="@string/detail_accuracy"
+                app:fontName="04b24" />
+
+            <cn.haseo.radar.widget.MyTextView
+                android:id="@+id/person_accuracy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                app:fontName="04b03b" />
+
+            <cn.haseo.radar.widget.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:text="@string/detail_address"
+                app:fontName="04b24" />
+
+            <TextView
+                android:id="@+id/person_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <cn.haseo.radar.widget.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:text="@string/detail_last_update"
+                app:fontName="04b24" />
+
+            <cn.haseo.radar.widget.MyTextView
+                android:id="@+id/lastUpdated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                app:fontName="04b03b" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/footer" />
+
+</LinearLayout>

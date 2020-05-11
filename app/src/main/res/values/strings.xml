@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">Radar</string>
+
+    <string name="text_enemy">EnEmIES</string>
+    <string name="text_friend">FrIEndS</string>
+    <string name="button_radar">RAdAR</string>
+    <string name="button_track">锁定</string>
+    <string name="button_detail">详情</string>
+
+    <string name="add_friend_title">Add FrieNd</string>
+    <string name="add_enemy_title">Add EnEmy</string>
+    <string name="delete_friend_title">delete FrieNd</string>
+    <string name="delete_enemy_title">delete ENemy</string>
+
+    <string name="detail_number">NUMBER:</string>
+    <string name="detail_latlng">LATITUDE/LONGITUDE:</string>
+    <string name="detail_altitude">ALTITUDE:</string>
+    <string name="detail_accuracy">ACCURACY:</string>
+    <string name="detail_address">NEAREST ADDRESS:</string>
+    <string name="detail_last_update">SECONDS SINCE LAST UPDATE:</string>
+    <string name="dialog_name_label">Name:</string>
+    <string name="dialog_number_label">Number:</string>
+
+    <string name="distance">%1$.1fkm</string>
+    <string name="latlng">%1$.2fN/%2$.2fE</string>
+    <string name="altitude">%1$.1fm</string>
+    <string name="accuracy">&lt;%1$.0fm</string>
+
+
+</resources>
